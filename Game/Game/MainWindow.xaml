@@ -1,0 +1,20 @@
+﻿<Window x:Class="Game.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game"
+        mc:Ignorable="d"
+        Title="Mega Card Game" Height="350" Width="525">
+    <Grid>
+        <Label Content="Mega Card Game 2000" Margin="130,10,130,0" VerticalAlignment="Top" Height="44" FontSize="24"/>
+        <Label x:Name="ChoiceClass" Content="Choose a Class" Margin="195,59,195,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="ClassWarrior" Content="Warrior" Margin="88,90,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="114" Click="ClassWarrior_Click"/>
+        <Button x:Name="ClassThief" Content="Thief" Margin="202,90,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="113" Click="ClassThief_Click"/>
+        <Button x:Name="ClassMage" Content="Mage" Margin="0,90,88,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="114" Click="ClassMage_Click"/>
+        <Button x:Name="StartGame" Content="Start Game" HorizontalAlignment="Left" Margin="202,125,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold" Height="26" IsEnabled="False" Click="StartGame_Click"/>
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
+        <Image HorizontalAlignment="Left" Height="145" Margin="10,164,0,0" VerticalAlignment="Top" Width="171" Source="/Resources/image1.png"/>
+        <Image HorizontalAlignment="Left" Height="145" Margin="336,164,0,0" VerticalAlignment="Top" Width="171" Source="/Resources/image2.jpg"/>
+    </Grid>
+</Window>
